@@ -335,52 +335,41 @@
         </div>
       </div>
       <div class="dev">
-        <div style="color: aliceblue; font-size: 30px; text-align: center; margin-top: 30%; margin-bottom: 50px;">
+        <div style="color: aliceblue; font-size: 40px; text-align: center; margin-top: 30%; margin-top: 100px;">
             Percentage for those satisfied is:  95%
         </div>
         <div>
-            <hr>
+            <hr style="margin-top: 10%; margin-bottom: 10%;">
         </div>
         <div style="color: aliceblue; text-align: center; font-size: 30px;">
             Most popular questions about our site::
         </div>
-      <div style="margin-top: 5%; margin-left: 35%;">
+      <div style="margin-top: 5%; margin-left: 10%;">
         <div class="faq">
-           <button class="accordion">
-            Do you have all sizes ?
-           </button>
-           <div class="pannel">
-            <p style="color: #a19676;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Pariatur delectus amet architecto illum repellat iusto accusamus perferendis deserunt, ipsum sequi, quas possimus unde nobis? Error non ad totam rerum cum.
-            </p>
-           </div>
-
-        </div>
-
-        <br>
-
-        <div class="faq">
-           <button class="accordion">
-            What about black outfits ?
-            </button>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod sunt ratione sed reprehenderit ipsam voluptatibus voluptate aut tenetur, reiciendis et officia quisquam, commodi id deserunt tempore laborum obcaecati ab facilis.
-                </p>
+            <button class="accordion">Do you have all sizes ?</button>
+            <div class="panel">
+              <p style="color: #a19676">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
+
         </div>
 
         <br>
 
         <div class="faq">
-           <button class="accordion">
-            What about quality ? 
-            </button>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae repellendus labore sint harum eos nesciunt nemo eligendi, officia maxime autem laudantium hic alias unde magnam, vero nam? Asperiores, itaque quae?
-                </p>
+            <button class="accordion">What about black outfits ?</button>
+            <div class="panel">
+              <p style="color: #a19676">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+        </div>
+
+        <br>
+
+        <div class="faq">
+            <button class="accordion"> What about quality ? </button>
+            <div class="panel">
+              <p style="color: #a19676">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
             </div>
         </div>
       </div>
@@ -444,6 +433,23 @@
 
 
   </footer>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
   
 </body>
 
