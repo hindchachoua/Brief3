@@ -26,43 +26,35 @@
       </header>
 
        <!--subscribe-->
-  <div  class="container">
-
-    <div class="item">
-        <div>
-            <p class="titre">
-                <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
-                Subscribe
-            </p>
-          </div>
-        <div>
-            <p class="parag">
-                <link href="https://fonts.googleapis.com/css2?family=Podkova&family=Pompiere&display=swap" rel="stylesheet">Enter your full name:</p>
-            <input type="text" class="form-control" name="Nom" placeholder="Full name..." required="">
+       <div class="container">
+        <div class="item">
+            <p class="titre">Subscribe</p>
+            <form id="subscribeForm">
+                <div>
+                    <p class="parag">Enter your full name:</p>
+                    <input type="text" class="form-control" name="Nom" placeholder="Full name..." required>
+                </div>
+                <div>
+                    <p class="parag">Enter email:</p>
+                    <input type="email" class="form-control" name="Email" id="emailInput" placeholder="Email..." required>
+                    <br>
+                    <span id="emailError" style="color: red;"></span>
+                </div>
+                <div>
+                    <p class="parag">Password:</p>
+                    <input type="password" class="form-control" name="Password" id="passwordInput" placeholder="Password..." required>
+                    <br>
+                    <span id="passwordError" style="color: red;"></span>
+                </div>
+                <div>
+                    <button class="boutton" type="submit">Subscribe</button>
+                </div>
+            </form>
         </div>
-            <div>
-            <p class="parag">
-                <link href="https://fonts.googleapis.com/css2?family=Podkova&family=Pompiere&display=swap" rel="stylesheet">Enter email:</p>
-            <input type="email" class="form-control" name="Nom" placeholder="Email..." required="">
+        <div class="ima">
+            <img src="bnt.png" alt="fashionWoman">
         </div>
-        <div>
-            <p class="parag">
-                <link href="https://fonts.googleapis.com/css2?family=Podkova&family=Pompiere&display=swap" rel="stylesheet">Password:</p>
-            <input type="password" class="form-control" name="Nom" placeholder="Password..." required="">
-        </div>
-        <div>
-            <button class="boutton"><link href="https://fonts.googleapis.com/css2?family=Podkova&family=Pompiere&display=swap" rel="stylesheet">
-                Subscribe
-            </button>
-        
-        </div>
-
     </div>
-    <div class="ima">
-     <img src="bnt.png" alt="fashionWoman">
-    </div>
-    
-  </div>
    <!--/subscribe-->
    <footer>
     <div style="display: grid; row-gap: 60%;" >
@@ -82,5 +74,6 @@
 
 
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
